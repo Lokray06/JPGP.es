@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Juan Pablo",
+  lastName: "Garrido Portilla",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Programmer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Madrid", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Spanish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -29,12 +29,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/Lokray06",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/juan-pablo-garrido-portilla-42674b29a/",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:contact@jpgp.es",
   },
 ];
 
@@ -52,11 +52,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Yet a student, soon a developer</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Juan Pablo, a web developer student at <InlineCode>ALTAIR</InlineCode>, yet, I've dived
+      <br />into many projects in multiples languages including, Java, C#, and Python. 
     </>
   ),
 };
@@ -81,9 +81,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+      I'm a web development student interested in game development <br/>and graphics programming. 
+      I enjoy taking on ambitious projects <br/>as a way to learn and improve.<br/> 
+      Here are some things I've worked on in recent years. 
       </>
     ),
   },
@@ -92,17 +92,15 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Vinilo Sevilla",
+        timeframe: "March - August 2024",
+        role: "Vinyl installer, and Network Administrator",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Gained extensive experience in vinyl installation through multiple projects for clients like Shell, Real Maestranza de Sevilla, Real Club El Mercantil, and more.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Independently maintained the company's network infrastructure, improving workflow efficiency for designers by 50%.
           </>,
         ],
         images: [
@@ -115,22 +113,7 @@ const about = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      ,
     ],
   },
   studies: {
@@ -138,12 +121,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Altair, Seville, 2022-24",
+        description: <>Studied Microcomputer Systems and Networks (Minor degree).</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Altair, Seville, 2024",
+        description: <>Studing Web App Development and Programming (Major degree).</>,
       },
     ],
   },
@@ -152,17 +135,23 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Web development",
+        description:
+        <>
+        Experienced in full-stack web development using JavaScript, HTML, and CSS,<br/>
+         with backend data management in MySQL or MariaDB. 
+        </>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
+            //smoking tracker screenshot
             src: "/images/projects/project-01/cover-02.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
+
             src: "/images/projects/project-01/cover-03.jpg",
             alt: "Project image",
             width: 16,
@@ -171,8 +160,11 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Game development",
+        description:
+        <>
+        Proficient in game development with Unity and C#,<br/> as well as 3D modeling and rendering in Blender.
+        </>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -282,4 +274,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, blog, work, gallery };

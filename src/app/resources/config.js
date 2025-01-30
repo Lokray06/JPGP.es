@@ -1,10 +1,10 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "jpgp.es";
 
 const routes = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": true,
+  "/blog": false,
   "/gallery": true,
 };
 
