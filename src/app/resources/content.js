@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Programmer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   location: "Europe/Madrid", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Spanish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -55,9 +55,7 @@ const home = {
   headline: <>Yet a student, soon a developer</>,
   subline: (
     <>
-      I'm Juan Pablo, a web developer student at <InlineCode>ALTAIR</InlineCode>, yet, I've dived
-      <br />into many projects in multiples languages including, Java, C#, and Python. 
-    </>
+      I'm Juan Pablo, a web development student based in <InlineCode>SEVILLE</InlineCode>. I've worked on many personal projects across multiple languages, including Java, C#, and Python.</>
   ),
 };
 
