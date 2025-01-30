@@ -8,6 +8,7 @@ const person = {
   },
   role: "Programmer",
   avatar: "/images/avatar.png",
+  locationLiving: "Seville/ES",
   location: "Europe/Madrid", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Spanish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -62,7 +63,7 @@ const home = {
 const about = {
   label: "About",
   title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from Seville`,
   tableOfContent: {
     display: true,
     subItems: false,
