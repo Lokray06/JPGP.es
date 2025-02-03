@@ -121,11 +121,11 @@ const about = {
     institutions: [
       {
         name: "Altair, Seville, 2022-24",
-        description: <>Studied Microcomputer Systems and Networks (Minor degree).</>,
+        description: <>Studied Microcomputer Systems and Networks (Vocational training).</>,
       },
       {
         name: "Altair, Seville, 2024",
-        description: <>Studing Web App Development and Programming (Major degree).</>,
+        description: <>Studing Web App Development and Programming (Associates degree).</>,
       },
     ],
   },
