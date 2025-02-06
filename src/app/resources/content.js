@@ -136,23 +136,20 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Web development",
+        title: "Web Development",
         description:
         <>
-        Experienced in full-stack web development using JavaScript, HTML, and CSS,<br/>
-         with backend data management in MySQL or MariaDB. 
+          Experienced in full-stack web development using JavaScript, HTML, and CSS,<br/>
+          with backend data management in MySQL or MariaDB. Familiar with modern frameworks and responsive design.
         </>,
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
-            //smoking tracker screenshot
             src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            alt: "Smoking tracker app screenshot",
             width: 16,
             height: 9,
           },
           {
-
             src: "/images/projects/project-01/cover-03.jpg",
             alt: "Project image",
             width: 16,
@@ -161,22 +158,33 @@ const about = {
         ],
       },
       {
-        title: "Game development",
+        title: "Game Development",
         description:
         <>
-        Proficient in game development with Unity and C#,<br/> as well as 3D modeling and rendering in Blender.
+          Proficient in game development with Unity and C#,<br/>
+          as well as 3D modeling and rendering in Blender.<br/>
+          Currently building a 3D game engine from scratch in C++ using OpenGL.
         </>,
-        // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "Game project screenshot",
             width: 16,
             height: 9,
           },
         ],
       },
-    ],
+      {
+        title: "Programming",
+        description:
+        <>
+          Strong programming skills in Java, Python, and C#.<br/>
+          Experience with algorithms, object-oriented programming, and software architecture.
+        </>,
+        images: [],
+      },
+    ]
+    ,
   },
 };
 
