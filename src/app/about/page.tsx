@@ -6,6 +6,7 @@ import {
   Heading,
   Icon,
   IconButton,
+  InlineCode,
   SmartImage,
   Tag,
   Text,
@@ -283,6 +284,9 @@ export default function About() {
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
+                    <InlineCode marginBottom="16">
+                      {institution.period}
+                    </InlineCode>
                     <Text variant="heading-default-xs" onBackground="neutral-weak">
                       {institution.description}
                     </Text>

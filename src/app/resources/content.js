@@ -120,11 +120,13 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "Altair, Seville, 2022-24",
+        name: "Altair, Seville",
+        period: "2022-24",
         description: <>Studied Microcomputer Systems and Networks (Vocational training).</>,
       },
       {
-        name: "Altair, Seville, 2024",
+        name: "Altair, Seville",
+        period: "Currently",
         description: <>Studing Web App Development and Programming (Associates degree).</>,
       },
     ],
