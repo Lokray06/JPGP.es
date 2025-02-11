@@ -1,0 +1,93 @@
+---
+title: "Cryptographic RSA Image Steganography (CRIS)"
+publishedAt: "2025-02-11"
+summary: "A Python-based steganography tool that hides files within images using RSA encryption for secure data embedding."
+images:
+  - "/images/projects/cris/cover.jpg"
+  - "/images/projects/cris/example.jpg"
+team:
+  - name: "Juan Pablo Garrido"
+    role: "Software Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/juan-pablo-garrido-portilla-42674b29a/"
+link: "https://github.com/Lokray06/CRIS"
+---
+
+## Overview
+
+CRIS (**Cryptographic RSA Image Steganography**) is a Python-based tool that securely hides files within images using **RSA encryption** and **steganography**. By scattering encrypted file bytes across an image’s pixels, CRIS ensures secure data embedding and retrieval, making it useful for covert data storage and transmission.
+
+## Key Features
+
+- **RSA Encryption**: Encrypts a seed used for shuffling byte placements within the image.
+- **Shuffling Mechanism**: Ensures data is embedded in a non-sequential, randomized order for security.
+- **File Length Header**: Stores file size metadata in pixel (0,0) to aid in extraction.
+- **Seamless Encoding & Decoding**: Provides a simple CLI-based workflow for embedding and extracting files.
+
+## How It Works
+
+### Encoding Process
+1. Convert the image to **RGBA** format.
+2. Read the file to be encoded.
+3. Generate a **seed**, encrypt it with RSA, and store it in the image.
+4. Shuffle available pixels based on the encrypted seed.
+5. Embed file bytes into randomized pixel locations.
+
+### Decoding Process
+1. Read the file length from the header pixel (0,0).
+2. Decrypt the seed using the **private key**.
+3. Reconstruct the shuffled pixel order.
+4. Extract the hidden file bytes from the image.
+
+## Technologies Used
+
+- **Python 3.x**: Core programming language.
+- **Pillow**: Image processing library.
+- **RSA Library**: Handles encryption and decryption.
+
+## Usage
+
+### Installation
+Install required dependencies:
+```bash
+pip install Pillow rsa
+```
+
+### Key Generation
+```bash
+python keygen.py
+```
+*Generates `example_public.pem` and `example_private.pem`.*
+
+### Encoding a File into an Image
+```bash
+python encoder.py --file secret.txt --image input.png --key example_public.pem
+```
+*Outputs `encoded_input.png` containing the hidden data.*
+
+### Decoding the File
+```bash
+python decoder.py --image encoded_input.png --output output.txt --key example_private.pem
+```
+*Retrieves the original file from the image.*
+
+## Challenges and Learnings
+
+One challenge was **ensuring security while keeping the image visually unchanged**. Encoding large files can make steganography more detectable, so optimizing the distribution pattern was key. Additionally, managing cross-platform compatibility and efficient decryption were important aspects of development.
+
+## Security Considerations
+
+While CRIS enhances security by encrypting embedded data, steganography is not foolproof against advanced forensic techniques. The more data encoded into an image, the more noticeable the alterations may become. This project serves as a **demonstration of encryption-enhanced steganography**, rather than a bulletproof security solution.
+
+## Outcome
+
+CRIS provides a **simple yet powerful** tool for embedding encrypted files within images. By leveraging **RSA encryption and randomized embedding**, it offers a unique approach to steganography while remaining accessible via a straightforward command-line interface.
+
+## License
+
+CRIS is open-source under the **MIT License**. Contributions are welcome!
+
+## References
+- **RSA Encryption**: [Wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+- **Steganography**: [Wikipedia](https://en.wikipedia.org/wiki/Steganography)
+

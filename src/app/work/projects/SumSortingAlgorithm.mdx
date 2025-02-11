@@ -1,0 +1,72 @@
+---
+title: "Sum-Based Sorting Algorithm"
+publishedAt: "2025-02-11"
+summary: "A novel sorting algorithm that sorts an array of integers by recursively comparing the sums of its halves."
+images:
+  - "/images/projects/cris/cover.jpg"
+  - "/images/projects/cris/example.jpg"
+team:
+  - name: "Juan Pablo Garrido"
+    role: "Software Developer"
+    avatar: "/images/avatar.png"
+    linkedIn: "https://www.linkedin.com/in/juan-pablo-garrido-portilla-42674b29a/"
+link: "https://github.com/Lokray06/CRIS"
+---
+
+## Overview
+
+This project presents a unique sorting algorithm that orders an array of integers based on the sums of its halves. Unlike traditional sorting methods that compare individual elements, this algorithm recursively divides the array, computes segment sums, and reorders segments accordingly. This approach ensures an efficient sorting mechanism with a distinct logical flow.
+
+## Key Features
+
+- **Recursive Splitting**: The algorithm breaks the array into smaller segments until only one or zero elements remain.
+- **Sum Comparison**: At each level of recursion, it calculates and compares the sums of the left and right halves.
+- **Conditional Swapping**: If the left half’s sum is greater than the right half’s, the halves are swapped.
+- **Efficient Merging**: Once sorted, the halves are merged to form the final sorted array.
+
+## Algorithm Workflow
+
+1. **Splitting**: Recursively divide the array into two halves.
+2. **Summing**: Compute the sum of elements in each half.
+3. **Swapping**: If necessary, swap the two halves.
+4. **Recursive Sorting**: Apply the process recursively to each half.
+5. **Merging**: Merge the sorted halves back together.
+
+This novel approach introduces a fresh perspective on sorting by leveraging segment-based comparisons rather than strict element-wise comparisons.
+
+## Complexity Analysis
+
+- **Time Complexity**: The algorithm operates in **O(n log n)** time, akin to merge sort, due to recursive splitting and summing at each level.
+- **Space Complexity**: The algorithm requires **O(n)** space for temporary storage during merging.
+
+## Usage
+
+To test the algorithm, use the provided `main` method, which generates a random array, sorts it, and outputs the results.
+
+### Example
+
+```java
+public static void main(String[] args) {
+    int[] array = generateRandomArray(10);
+    System.out.println("Original array: " + Arrays.toString(array));
+    
+    sortBySums(array);
+    
+    System.out.println("Sorted array: " + Arrays.toString(array));
+}
+```
+
+## Challenges and Learnings
+
+- **Ensuring Stability**: Handling cases where multiple elements share similar sums was a challenge.
+- **Performance Optimization**: Reducing redundant calculations improved execution time.
+- **Theoretical Exploration**: Exploring how sum-based sorting compares to traditional sorting methods was insightful.
+
+## Outcome
+
+This project introduces a creative alternative to classical sorting algorithms. While it may not replace quicksort or mergesort in practical applications, it offers valuable insights into algorithm design and efficiency analysis.
+
+---
+
+This project showcases problem-solving skills and algorithmic thinking, making it a strong addition to any technical portfolio focused on computational efficiency.
+
